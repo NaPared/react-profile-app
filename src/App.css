@@ -53,16 +53,15 @@
 }
 
 .bio-container{
-  margin-bottom: 5rem;
-  height: 350px;
+  max-height: 1000px;
+  min-height: 700px;
+  margin-top: 2rem;
 }
 
 .bio-txt{
   font-size: 20px;
   min-width: 320px;
   max-width: 1000px;
-  max-height: 700px;
-  min-height: 200px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -84,7 +83,6 @@
   left: 0;
   right: 0;
   text-align: center;
-  height: 100px;
 }
 
 .linked-in-img{
@@ -99,7 +97,7 @@
   font-size: 18px;
   height: 60px;
   line-height: 50px;
-  width: 350px;
+  width: 320px;
   vertical-align: middle;
   border: 3px solid #cc99ff;
   border-radius: 5rem;
@@ -121,9 +119,9 @@
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  max-width: 650px;
+  max-width: 700px;
   min-width: 320px;
-  max-height: 100px;
+  max-height: 500px;
   min-height: 160px;
   margin-left: auto;
   margin-right: auto;
@@ -138,7 +136,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 0.75rem;
   text-shadow: 1px 2px 2px gray;
-  margin-top: 15rem;
 }
 
 .lan-img{
@@ -149,8 +146,12 @@
   margin-top: 5%;
 }
 
-#html, #css, #react{
-  margin-right: 5rem;
+#html, #react{
+  margin-left: 1rem;
+}
+
+#css, #javaScript{
+  margin-left: 1rem;
 }
 
 .project-header-txt{
@@ -186,8 +187,9 @@
   margin-bottom: 20rem;
   row-gap: 1.25em;
   column-gap: 2.50em;
-  margin-top: 6rem;
-  height: 350px;
+  max-height: 300px;
+  min-height: 1000px;
+  background-color: black;
 }
 
 .project-item {
