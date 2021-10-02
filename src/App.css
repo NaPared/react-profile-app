@@ -1,38 +1,311 @@
-.App {
+*{
+  margin: 0;
+  padding: 0%;
+  font-family: roboto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.header-container{
+  background-color: white;
+  box-shadow: 1px 1px 5px 1px gray;
+  width: 100%;
+  text-align: right;
+  height: 50px;
+  position: fixed;
+}
+
+.list-item{
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: center;
+  line-height: 45px;
+}
+
+.links{
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.links:hover{
+  text-decoration: underline;
+}
+
+.identity-container{
+  height: 500px;
   text-align: center;
+  background: linear-gradient(to bottom right, rgb(0, 51, 204) 5%, rgb(204, 153, 255) 80%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.self-img{
+  height: 300px;
+  width: 300px;
+  border-radius: 10em;
+  margin-top: 3rem;
+  border: 1px solid white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.identity-txt{
+  letter-spacing: 0.25rem;
   color: white;
+  text-shadow: 3px 2px 3px hsl(270, 100%, 80%);
 }
 
-.App-link {
-  color: #61dafb;
+.bio-container{
+  margin-bottom: 5rem;
+  height: 350px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bio-txt{
+  font-size: 20px;
+  min-width: 320px;
+  max-width: 1000px;
+  max-height: 700px;
+  min-height: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  vertical-align: center;
+  line-height: 40px;
+  border: 1px solid black;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  box-shadow: 2px 2px 5px 2px gray;
+  resize: none;
+  flex: 1;
+  word-spacing: 1px;
+}
+
+.linkedin-container{
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 100px;
+}
+
+.linked-in-img{
+  width: 30px;
+  height: 30px;
+  margin-right: 3rem;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.linkedin-profile-btn{
+  font-size: 18px;
+  height: 60px;
+  line-height: 50px;
+  width: 350px;
+  vertical-align: middle;
+  border: 3px solid #cc99ff;
+  border-radius: 5rem;
+  color: white;
+  font-weight: bold;
+  background-color: #0033cc;
+  transition: 0.5s ease-in-out;
+  margin-top: 1rem;
+}
+
+.linkedin-profile-btn:hover{
+  background-color: #cc99ff;
+  border: 3px solid #0033cc;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.skills-list-container{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  max-width: 650px;
+  min-width: 320px;
+  max-height: 100px;
+  min-height: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.skills-list-txt{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.75rem;
+  text-shadow: 1px 2px 2px gray;
+  margin-top: 15rem;
+}
+
+.lan-img{
+  width: 100px;
+  height: 100px;
+  box-shadow: 1px 1px 4px 1px gray;
+  border-radius: 5rem;
+  margin-top: 5%;
+}
+
+#html, #css, #react{
+  margin-right: 5rem;
+}
+
+.project-header-txt{
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  letter-spacing: 0.25rem;
+  text-shadow: 1px 3px 3px gray;
+  transition: 1.5s ease;
+  font-size: 35px;
+  height: 60px;
+  width: fit-content;
+  margin-top: 10rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-header-txt:hover{
+  letter-spacing: 1rem;
+  transition: 1s ease;
+  font-size: 40px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-content: center;
+  align-content: center;
+  min-width: 320px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20rem;
+  row-gap: 1.25em;
+  column-gap: 2.50em;
+  margin-top: 6rem;
+  height: 350px;
+}
+
+.project-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 1rem;
+  min-width: 300px;
+  max-width: 400px;
+  height: 300px;
+  transition: 0.5s;
+  border-radius: 1rem;
+}
+
+.project1{
+  background: url('https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80') no-repeat;
+  background-size: cover;
+}
+
+.project2{
+  background: url('https://images.unsplash.com/photo-1602632003094-0494b73b7c4a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80') no-repeat;
+  background-size: cover;
+}
+
+.project3{
+  background: url('https://pbs.twimg.com/profile_images/634027256793329664/5WhLy_Jq_400x400.png');
+  background-size: cover;
+}
+
+.text, .text-info{
+  color: white;
+  text-shadow: 3px 2px 2px rgb(153, 125, 180);
+}
+
+.text{
+  display: none;
+  line-height: 125px;
+}
+
+.text-info{
+  display: none;
+  font-size: 20px;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+.text-btn{
+  text-align: center;
+  display: none;
+}
+
+.text-btn-style{
+  border: none;  
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 200px;
+  border-radius: 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.text-btn-style:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.project-item:hover .text-info{
+  display: block;
+}
+
+.project-item:hover .text{
+  display: block;
+}
+
+.project-item:hover .text-btn{
+  display: block;
+}
+
+.project-item:hover{
+  transition: 0.45s ease-in-out;
+  box-shadow: 1px 3px 4px 3px #808080;
+  background: rgba(0,0,0,0.7);
+  cursor: pointer;
+}
+
+.footer-container{
+  background: rgb(245,245,245);
+  background-size: cover;
+  margin-bottom: 0;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  box-shadow: 1px 1px 3px 1px gray;
+  height: 100px;
+}
+
+.social-icons{
+  display: inline-flex;
+}
+
+.twitter:hover, .instagram:hover, .github:hover, .facebook:hover{
+  opacity: 0.7;
+}
+
+.social-list-footer{
+  text-align: right;
+  position: relative;
+  list-style-type: none;
+  vertical-align: center;
+  line-height: 100px;
+}
+
+#icon{
+  margin-right: 1rem;
 }
